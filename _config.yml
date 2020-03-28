@@ -39,7 +39,7 @@ baseurl: "/blog" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: seidlr
+    twitter: rob_seidl
     github: seidlr
     linkedin: robert-seidl
 
