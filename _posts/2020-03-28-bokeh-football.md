@@ -4,6 +4,7 @@ layout: post
 description: A minimal example of creating an interactive football plot with bokeh server.
 categories: [friends of tracking, bokeh, tracking data]
 title: Friends of Tracking Example Post
+image: images/bokeh-football.png
 ---
 # Friends of Tracking Example
 - Found this repository
