@@ -3,12 +3,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Friends of Tracking Example Post | talksportsdata</title>
+<title>Visualising football tracking data with bokeh server. | talksportsdata</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Friends of Tracking Example Post" />
+<meta property="og:title" content="Visualising football tracking data with bokeh server." />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A minimal example of creating an interactive football plot with bokeh server." />
-<meta property="og:description" content="A minimal example of creating an interactive football plot with bokeh server." />
+<meta name="description" content="How to create an interactive football plot for tracking data with bokeh server." />
+<meta property="og:description" content="How to create an interactive football plot for tracking data with bokeh server." />
 <link rel="canonical" href="https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html" />
 <meta property="og:url" content="https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html" />
 <meta property="og:site_name" content="talksportsdata" />
@@ -16,15 +16,15 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-28T00:00:00-05:00" />
 <script type="application/ld+json">
-{"image":"https://seidlr.github.io/blog/images/bokeh-football.png","description":"A minimal example of creating an interactive football plot with bokeh server.","mainEntityOfPage":{"@type":"WebPage","@id":"https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html"},"@type":"BlogPosting","url":"https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html","headline":"Friends of Tracking Example Post","dateModified":"2020-03-28T00:00:00-05:00","datePublished":"2020-03-28T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"image":"https://seidlr.github.io/blog/images/bokeh-football.png","description":"How to create an interactive football plot for tracking data with bokeh server.","mainEntityOfPage":{"@type":"WebPage","@id":"https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html"},"@type":"BlogPosting","url":"https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html","headline":"Visualising football tracking data with bokeh server.","dateModified":"2020-03-28T00:00:00-05:00","datePublished":"2020-03-28T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://seidlr.github.io/blog/feed.xml" title="talksportsdata" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Friends of Tracking Example Post | talksportsdata</title>
+<title>Visualising football tracking data with bokeh server. | talksportsdata</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Friends of Tracking Example Post" />
+<meta property="og:title" content="Visualising football tracking data with bokeh server." />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A minimal example of creating an interactive football plot with bokeh server." />
-<meta property="og:description" content="A minimal example of creating an interactive football plot with bokeh server." />
+<meta name="description" content="How to create an interactive football plot for tracking data with bokeh server." />
+<meta property="og:description" content="How to create an interactive football plot for tracking data with bokeh server." />
 <link rel="canonical" href="https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html" />
 <meta property="og:url" content="https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html" />
 <meta property="og:site_name" content="talksportsdata" />
@@ -32,7 +32,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-28T00:00:00-05:00" />
 <script type="application/ld+json">
-{"image":"https://seidlr.github.io/blog/images/bokeh-football.png","description":"A minimal example of creating an interactive football plot with bokeh server.","mainEntityOfPage":{"@type":"WebPage","@id":"https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html"},"@type":"BlogPosting","url":"https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html","headline":"Friends of Tracking Example Post","dateModified":"2020-03-28T00:00:00-05:00","datePublished":"2020-03-28T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"image":"https://seidlr.github.io/blog/images/bokeh-football.png","description":"How to create an interactive football plot for tracking data with bokeh server.","mainEntityOfPage":{"@type":"WebPage","@id":"https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html"},"@type":"BlogPosting","url":"https://seidlr.github.io/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html","headline":"Visualising football tracking data with bokeh server.","dateModified":"2020-03-28T00:00:00-05:00","datePublished":"2020-03-28T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -103,13 +103,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Friends of Tracking Example Post</h1><p class="page-description">A minimal example of creating an interactive football plot with bokeh server.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-28T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Visualising football tracking data with bokeh server.</h1><p class="page-description">How to create an interactive football plot for tracking data with bokeh server.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-28T00:00:00-05:00" itemprop="datePublished">
         Mar 28, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -131,15 +131,62 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="friends-of-tracking-example">Friends of Tracking Example</h1>
+    <h1 id="visualising-football-tracking-data-with-bokeh-server">Visualising football tracking data with bokeh server.</h1>
+<p>Last Thursday I listened to the first episode of <a href="https://www.youtube.com/channel/UCUBFJYcag8j2rm_9HkrrA7w">Friends of Tracking</a> where David Sumpter
+(<a href="https://twitter.com/Soccermatics">@Soccermatics</a>), <a href="https://twitter.com/JaviOnData">@JaviOnData</a>, <a href="https://twitter.com/AlexThomasTheFA">@AlexThomasTheFA</a>, <a href="https://www.linkedin.com/in/sudarshan-gopaladesikan-24321a29/">Suds Gopaladesikan</a>, <a href="https://twitter.com/">@PeraltaFran23</a> and <a href="https://www.linkedin.com/in/pascal-bauer-53b4ab139/">Pascal Bauer (DFB)</a> had the great idea to “give back during difficult times”. They will provide open lectures on football analytics explaining how they work inside clubs and national teams on their <a href="https://www.youtube.com/channel/UCUBFJYcag8j2rm_9HkrrA7w">Youtube channel</a>. As the name of their group suggests the group was initiated when tracking data became available in football and they recognized that everyone was working on the same problems and code. Because David Sumpter also mentioned that he tries to get some free tracking data of the Swedish league I thought that it might be a good idea to share a repository I found that can be used to easily visualize tracking data in a Jupyter notebook and start from there instead of implementing the visualization. It is written in Python and uses <a href="https://docs.bokeh.org/en/latest/index.html">bokeh</a> for the interaction. The nice thing is that it already has features to show Voronoi cells and convex hulls of both teams.</p>
+
+<p>You can find the code at https://github.com/seidlr/Game-Animation and follow the instructions in the <code class="highlighter-rouge">Readme</code>.<br />
+Here is a short summary if you already have Anaconda installed:</p>
+<ol>
+  <li>Clone the repository
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/seidlr/Game-Animation
+</code></pre></div>    </div>
+  </li>
+  <li>Change the directory
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Game-Animation
+</code></pre></div>    </div>
+  </li>
+  <li>Create the conda environment
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda env update
+</code></pre></div>    </div>
+    <p>This creates a conda environment called <code class="highlighter-rouge">game-animation</code>.</p>
+  </li>
+  <li>Activate the environment
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate game-animation
+</code></pre></div>    </div>
+  </li>
+  <li>And finally start the jupyter notebook server
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyer notebook
+</code></pre></div>    </div>
+  </li>
+  <li>Select the <code class="highlighter-rouge">Soccer_example.ipynb</code> and run the code cells.</li>
+</ol>
+
+<p>Following the instructions in the notebook you can easily visualise and animate tracking data. It might look like this:
+<script src="https://bokeh-football.apps.talksportsdata.com/bokeh-football/autoload.js?bokeh-autoload-element=1000&amp;bokeh-app-path=/bokeh-football&amp;bokeh-absolute-url=https://bokeh-football.apps.talksportsdata.com/bokeh-football" id="1000">
+</script></p>
+
+<p>Using the code you can actually focus your time on more valueable projects than building the visualisation. Here are some ideas to get started.</p>
+
+<h2 id="possible-extensions">Possible extensions</h2>
 <ul>
-  <li>Found this repository</li>
-  <li>Cleaned it up such that it can be used without setup</li>
-  <li>Used <code class="highlighter-rouge">bokeh-server</code> to show animation inside blogpost</li>
+  <li>Color the Voronoi cells by team in red and blue.</li>
+  <li>Use <code class="highlighter-rouge">sklearn</code> K-means on the <code class="highlighter-rouge">x</code> values to find three clusters for attack, midfield and defense.</li>
+  <li>Draw lines between the players in each of the clusters as shown <a href="https://twitter.com/spielvercom/status/1243957222876614657?s=20">here</a>:
+<img src="https://i.imgur.com/gvM7rwX.png" alt="Lines between players in clusters" /></li>
+  <li>Count all “line-breaking” passes</li>
 </ul>
 
-<script src="https://bokeh-football.apps.talksportsdata.com/bokeh-football/autoload.js?bokeh-autoload-element=1000&amp;bokeh-app-path=/bokeh-football&amp;bokeh-absolute-url=https://bokeh-football.apps.talksportsdata.com/bokeh-football" id="1000">
-</script>
+<h1 id="note">Note</h1>
+<p>I have just forked this repository from <code class="highlighter-rouge">https://github.com/samirak93/Game-Animation</code>. The code was not written by me. I just made some small changes to make it easier to use:</p>
+<ul>
+  <li>I’ve cleaned up unneccesary folders like <code class="highlighter-rouge">__pycache__</code> and <code class="highlighter-rouge">.ipynb_checkpoints</code>.</li>
+  <li>I’ve added a <code class="highlighter-rouge">.gitignore</code> file to keep the repository clean.</li>
+  <li>I’ve added an <code class="highlighter-rouge">environment.yml</code> file such that you can install all necessary requirements to run the notebooks.</li>
+  <li>I’ve changed the calculation of the convex hull of teams to not inlcude the goalkeeper.</li>
+</ul>
+
+<p><img src="assets/2020-03-28-19-24-04.png" alt="" /></p>
 
 
   </div><a class="u-url" href="/blog/friends%20of%20tracking/bokeh/tracking%20data/2020/03/28/bokeh-football.html" hidden></a>
