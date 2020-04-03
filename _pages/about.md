@@ -10,7 +10,7 @@ Something about me.
 - M.Sc. Computational Science and Engineering, Thesis:  
   Deep learning w/ Autoencoder
 - PhD in Computer Science (numerical methods, inverse problems)
-- Machine Learning Engineer Football Analytics w/ Jan Van Haaren at [SciSports](https://www.scisports.com/)
+- Machine Learning Engineer Football Analytics w/ [Jan Van Haaren](https://twitter.com/JanVanHaaren) at [SciSports](https://www.scisports.com/)
     - models on event data
 - Football Data Scientist, [Deltatre AG](https://www.deltatre.com/) / [Sportec Solutions](https://www.sportec-solutions.de/en/index.html)
     - data provider for German Bundesliga
