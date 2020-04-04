@@ -51,11 +51,11 @@ Using the code you can actually focus your time on more valueable projects than 
 - Count all "line-breaking" passes
 
 # Note
-I have just forked this repository from `https://github.com/samirak93/Game-Animation`. The code was not written by me. I just made some small changes to make it easier to use:
+I have just forked this repository from `https://github.com/samirak93/Game-Animation`. The code was not written by me. I only made some small changes to make it easier to use:
 - I've cleaned up unneccesary folders like `__pycache__` and `.ipynb_checkpoints`.
 - I've added a `.gitignore` file to keep the repository clean.
 - I've added an `environment.yml` file such that you can install all necessary requirements to run the notebooks.
-- I've changed the calculation of the convex hull of teams to not inlcude the goalkeeper.  
+- I've changed the calculation of the convex hull of teams to not include the goalkeeper.  
 
 
 
