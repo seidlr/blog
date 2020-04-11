@@ -199,12 +199,12 @@ I decided to work on three small showcases such that you get an idea how you can
 </center>
 
 <h2 id="what-to-do-from-here">What to do from here?</h2>
-<p>Getting all the widgets into a state to run smoothly is always a bit challenging, especially because they tend to fail silently, meaning that there might be no error in the notebook but the widget is not doing what you want it to do because you made a mistake somewhere. The only way to learn how to use them is actually to invest time. The best way is to build on a widget and try to add new functionality.<br />
+<p>Getting all the widgets into a state to run smoothly is always a bit challenging, especially because they tend to fail silently, meaning that there might be no error in the notebook but the widget is not doing what you want it to do due to a coding error. The only way to learn how to use them is actually to invest time. The best way is to build on a widget and try to add new functionality.<br />
 Here are some ideas:</p>
 <ul>
   <li>Add the current game time to the pitch plot (and update it when playing).</li>
   <li>Add some functionality like voronoi cells or convex hulls of teams as implemented <a href="https://github.com/seidlr/Game-Animation">here</a>.</li>
-  <li>Add a auto-replay option: When selecting an event, the animation should start at this event and stop of it is over as documented in the columns <code class="highlighter-rouge">End X</code> and <code class="highlighter-rouge">End Y</code>.</li>
+  <li>Add an auto-replay option: When selecting an event, the animation starts at the start time of the event and stops it reached the end time.</li>
   <li>Create an overlay/tooltip for player information using <code class="highlighter-rouge">bqplot.tooltip</code>.</li>
   <li>Calculate the distance covered for each player and the ball in the match.</li>
 </ul>
