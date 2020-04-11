@@ -11,13 +11,17 @@ Unfortunately, I missed the last episode [How Tracking Data is Used in Football 
 
 {% twitter https://twitter.com/Soccermatics/status/1248614585851998214?s=20 %}
 
-I agree one hundred percent that it was a really in-dept discussion of current issues. They also managed to get sample tracking data of two matches from [Metrica Sports](https://github.com/metrica-sports/sample-data). Given the quality of the talk they had, I thought I will have to up the ante on my side. I thought about what I would have been very happy to know a year ago and therefore I created a notebook where I use Jupyter widgets the create interactive components which you can use to investigate the Metrica Sports data. You can get all the code on Github, [https://github.com/seidlr/fotd-interactive-football-pitch](https://github.com/seidlr/fotd-interactive-football-pitch), and simply follow the installation instructions in the Readme.  
+I agree one hundred percent that it was a really in-dept discussion of current issues. They also managed to get sample tracking data of two matches from [Metrica Sports](https://github.com/metrica-sports/sample-data). Given the quality of the talk they had, I thought I will have to up the ante on my side. I thought about what I would have been very happy to know a year ago and therefore I created a notebook where I use Jupyter widgets to create interactive components which you can use to investigate the Metrica Sports data. You can get all the code on Github, [https://github.com/seidlr/fotd-interactive-football-pitch](https://github.com/seidlr/fotd-interactive-football-pitch), and simply follow the installation instructions in the Readme.  
 Or, and this is what I really like about Jupyter widgets, you can just use Binder to test everything online without installation.   
 Just click on this image   
 <center>
 <a href="https://mybinder.org/v2/gh/seidlr/fotd-interactive-football-pitch/master?filepath=Interactive-Football-Pitch.ipynb" target="_blank" ><img src="https://mybinder.org/badge_logo.svg"></a>
 </center>
-(and give Docker some time to build the image)
+and give Docker some time to build the image, and run all code of the repository online.  
+I decided to work on three small showcases such that you get an idea how you can use the tools.
+1. Use-case 1: Moving Players on a Football Pitch
+2. Use-case 2: Animate Tracking Data
+3. Use-case 3: Replay Events with Tracking Data  
 
 Here are some videos of the three use-cases I picked as showcases:
 ##  Use-case 1: Moving Players on a Football Pitch
@@ -29,7 +33,7 @@ I think everyone will share kind of the same story of how his or her visualisati
 
 
 ## Use-case 2: Animate Tracking Data
-The cool thing is that you can build our widgets on top of this in a simple way. As example I've attached a `Play` and `slider` widget. Now you can easily replay the match using tracking data.
+The cool thing is that you can build other widgets on top of this in a simple way. As example, I've attached a `Play` and `Slider` widget. Now you can easily replay the match using tracking data.
 
 <center>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/giqCwm85NzY" frameborder="0" allowfullscreen></iframe>
