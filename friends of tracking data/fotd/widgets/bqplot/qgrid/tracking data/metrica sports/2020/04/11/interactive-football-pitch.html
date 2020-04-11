@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>An Interactive Visualisation of Football Tracking Data. | talksportsdata</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="An Interactive Visualisation of Football Tracking Data." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to create an interactive football plot for tracking data with bokeh server." />
+<meta property="og:description" content="How to create an interactive football plot for tracking data with bokeh server." />
+<link rel="canonical" href="https://seidlr.github.io/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html" />
+<meta property="og:url" content="https://seidlr.github.io/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html" />
+<meta property="og:site_name" content="talksportsdata" />
+<meta property="og:image" content="https://seidlr.github.io/blog/images/fotd_widgets_thumbnail.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-11T00:00:00-05:00" />
+<script type="application/ld+json">
+{"image":"https://seidlr.github.io/blog/images/fotd_widgets_thumbnail.png","description":"How to create an interactive football plot for tracking data with bokeh server.","mainEntityOfPage":{"@type":"WebPage","@id":"https://seidlr.github.io/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html"},"@type":"BlogPosting","url":"https://seidlr.github.io/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html","headline":"An Interactive Visualisation of Football Tracking Data.","dateModified":"2020-04-11T00:00:00-05:00","datePublished":"2020-04-11T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://seidlr.github.io/blog/feed.xml" title="talksportsdata" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-162157046-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>An Interactive Visualisation of Football Tracking Data. | talksportsdata</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="An Interactive Visualisation of Football Tracking Data." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to create an interactive football plot for tracking data with bokeh server." />
+<meta property="og:description" content="How to create an interactive football plot for tracking data with bokeh server." />
+<link rel="canonical" href="https://seidlr.github.io/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html" />
+<meta property="og:url" content="https://seidlr.github.io/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html" />
+<meta property="og:site_name" content="talksportsdata" />
+<meta property="og:image" content="https://seidlr.github.io/blog/images/fotd_widgets_thumbnail.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-11T00:00:00-05:00" />
+<script type="application/ld+json">
+{"image":"https://seidlr.github.io/blog/images/fotd_widgets_thumbnail.png","description":"How to create an interactive football plot for tracking data with bokeh server.","mainEntityOfPage":{"@type":"WebPage","@id":"https://seidlr.github.io/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html"},"@type":"BlogPosting","url":"https://seidlr.github.io/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html","headline":"An Interactive Visualisation of Football Tracking Data.","dateModified":"2020-04-11T00:00:00-05:00","datePublished":"2020-04-11T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://seidlr.github.io/blog/feed.xml" title="talksportsdata" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-162157046-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">talksportsdata</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">An Interactive Visualisation of Football Tracking Data.</h1><p class="page-description">How to create an interactive football plot for tracking data with bokeh server.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-11T00:00:00-05:00" itemprop="datePublished">
+        Apr 11, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#friends of tracking data">friends of tracking data</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#FoTD">FoTD</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#widgets">widgets</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#bqplot">bqplot</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#qgrid">qgrid</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#tracking data">tracking data</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#metrica sports">metrica sports</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="an-interactive-visualisation-of-football-tracking-data">An Interactive Visualisation of Football Tracking Data</h1>
+<p>Unfortunately, I missed the last episode <a href="https://www.youtube.com/watch?v=kHTq9cwdkGA">How Tracking Data is Used in Football and What are the Future Challenges of Friends of Tracking Data</a> hosted by David Sumptor (<a href="https://twitter.com/Soccermatics">@Soccermatics</a>) with <a href="https://twitter.com/JaviOnData">@JaviOnData</a>, <a href="https://twitter.com/the_spearman">@the_spearman</a>, <a href="https://www.linkedin.com/in/sudarshan-gopaladesikan-24321a29/">Suds Gopaladesikan</a> and <a href="https://twitter.com/EightyFivePoint">@EightyFivePoint</a>. It felt a bit like missing a great panel at a conference due to overlap in schedules. Luckily for me, and all others, everything is recorded on Youtube and available <a href="https://www.youtube.com/watch?v=kHTq9cwdkGA">here</a>. This is what David had to say about the episode.</p>
+
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">For me personally, Thursday&#39;s live <a href="https://twitter.com/hashtag/FoT?src=hash&amp;ref_src=twsrc%5Etfw">#FoT</a> was one of the best discussions I have ever had about the science behind football analytics. So in depth with <a href="https://twitter.com/JaviOnData?ref_src=twsrc%5Etfw">@JaviOnData</a>, <a href="https://twitter.com/the_spearman?ref_src=twsrc%5Etfw">@the_spearman</a>, <a href="https://twitter.com/suds_g?ref_src=twsrc%5Etfw">@suds_g</a> and <a href="https://twitter.com/EightyFivePoint?ref_src=twsrc%5Etfw">@EightyFivePoint</a>. Here <a href="https://twitter.com/sk3tchYourLife?ref_src=twsrc%5Etfw">@sk3tchYourLife</a> really picks out the key points of the discussion. <a href="https://t.co/feQ0e5y6m7">pic.twitter.com/feQ0e5y6m7</a></p>&mdash; David Sumpter (@Soccermatics) <a href="https://twitter.com/Soccermatics/status/1248614585851998214?ref_src=twsrc%5Etfw">April 10, 2020</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>I agree one hundred percent that it was a really in-dept discussion of current issues. They also managed to get sample tracking data of two matches from <a href="https://github.com/metrica-sports/sample-data">Metrica Sports</a>. Given the quality of the talk they had, I thought I will have to up the ante on my side. I thought about what I would have been very happy to know a year ago and therefore I created a notebook where I use Jupyter widgets the create interactive components which you can use to investigate the Metrica Sports data. You can get all the code on Github, <a href="https://github.com/seidlr/fotd-interactive-football-pitch">https://github.com/seidlr/fotd-interactive-football-pitch</a>, and simply follow the installation instructions in the Readme.<br />
+Or, and this is what I really like about Jupyter widgets, you can just use Binder to test everything online without installation. <br />
+Just click on this image</p>
+<center>
+<a href="https://mybinder.org/v2/gh/seidlr/fotd-interactive-football-pitch/master?filepath=Interactive-Football-Pitch.ipynb" target="_blank"><img src="https://mybinder.org/badge_logo.svg" /></a>
+</center>
+<p>(and give Docker some time to build the image)</p>
+
+<p>Here are some screenshots of the three use-cases I picked as showcases:</p>
+<h2 id="use-case-1-moving-players-on-a-football-pitch">Use-case 1: Moving Players on a Football Pitch</h2>
+<p>I think everyone will share kind of the same story of how his or her visualisation of football pitches changed or improved over time. For me it was starting with Matplotlib and switching to Plotly because you actually don’t want to spent a ton of time to get some simple hover effects etc. But at some point you recognize that in the end you want to be able to actually move players or the ball around on the pitch and possibly rerun your pitch control or expected-goals model and answer some What-If questions. If you reached this point, you will be pleased to see that this is actually possible using <code class="highlighter-rouge">bqplot</code>, a Python wrapper around D3.js, in a jupyter notebook. If you launch the notebook on Binder, you can drag and drop each player and the ball on the pitch.</p>
+
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kx9IY_HAkK8" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<h2 id="use-case-2-animate-tracking-data">Use-case 2: Animate Tracking Data</h2>
+<p>The cool thing is that you can build our widgets on top of this in a simple way. As example I’ve attached a <code class="highlighter-rouge">Play</code> and <code class="highlighter-rouge">slider</code> widget. Now you can easily replay the match using tracking data.</p>
+
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/giqCwm85NzY" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<h2 id="use-case-3-replay-events-with-tracking-data">Use-case 3: Replay Events with Tracking Data</h2>
+<p>The Metrica data also gives you access to all the events that happened in the match. Would be cool to be able to filter events and jump to the position in the replay where they happened? We can use a <code class="highlighter-rouge">qgrid</code> widget to do this! Here is the result.</p>
+
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RhDjOxW_qrY" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<h2 id="what-to-do-from-here">What to do from here?</h2>
+<p>Getting all the widgets into a state to run smoothly is always a bit challenging, especially because they tend to fail silently, meaning that there might be no error in the notebook but the widget is not doing what you want it to do because you made a mistake somewhere. The only way to learn how to use them is actually to invest time. The best way is to build on a widget and try to add new functionality.<br />
+Here are some ideas:</p>
+<ul>
+  <li>Add the current game time to the pitch plot (and update it when playing).</li>
+  <li>Add some functionality like voronoi cells or convex hulls of teams as implemented <a href="https://github.com/seidlr/Game-Animation">here</a>.</li>
+  <li>Add a auto-replay option: When selecting an event, the animation should start at this event and stop of it is over as documented in the columns <code class="highlighter-rouge">End X</code> and <code class="highlighter-rouge">End Y</code>.</li>
+  <li>Create an overlay/tooltip for player information using <code class="highlighter-rouge">bqplot.tooltip</code>.</li>
+  <li>Calculate the distance covered for each player and the ball in the match.</li>
+</ul>
+
+  </div><a class="u-url" href="/blog/friends%20of%20tracking%20data/fotd/widgets/bqplot/qgrid/tracking%20data/metrica%20sports/2020/04/11/interactive-football-pitch.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>football analytics blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/seidlr" title="seidlr"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/robert-seidl" title="robert-seidl"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/rob_seidl" title="rob_seidl"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
