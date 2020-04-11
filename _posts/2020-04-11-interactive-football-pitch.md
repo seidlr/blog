@@ -48,10 +48,10 @@ The Metrica data also gives you access to all the events that happened in the ma
 </center>
 
 ## What to do from here?
-Getting all the widgets into a state to run smoothly is always a bit challenging, especially because they tend to fail silently, meaning that there might be no error in the notebook but the widget is not doing what you want it to do because you made a mistake somewhere. The only way to learn how to use them is actually to invest time. The best way is to build on a widget and try to add new functionality.  
+Getting all the widgets into a state to run smoothly is always a bit challenging, especially because they tend to fail silently, meaning that there might be no error in the notebook but the widget is not doing what you want it to do due to a coding error. The only way to learn how to use them is actually to invest time. The best way is to build on a widget and try to add new functionality.  
 Here are some ideas:
 - Add the current game time to the pitch plot (and update it when playing).
 - Add some functionality like voronoi cells or convex hulls of teams as implemented [here](https://github.com/seidlr/Game-Animation).
-- Add a auto-replay option: When selecting an event, the animation should start at this event and stop of it is over as documented in the columns `End X` and `End Y`.
+- Add an auto-replay option: When selecting an event, the animation starts at the start time of the event and stops it reached the end time.
 - Create an overlay/tooltip for player information using `bqplot.tooltip`.
 - Calculate the distance covered for each player and the ball in the match.
