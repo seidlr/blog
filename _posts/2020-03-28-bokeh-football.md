@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: How to create an interactive football plot for tracking data with bokeh server.
-categories: [friends of tracking, bokeh, tracking data]
+categories: [friends of tracking data, FoTD, bokeh, tracking data]
 title: Visualising football tracking data with bokeh server.
 image: images/bokeh-football.png
 ---
