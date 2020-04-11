@@ -1,7 +1,7 @@
 ---
 toc: false
 layout: post
-description: How to create an interactive football plot for tracking data with bokeh server.
+description: How to create truly interactive visualisations of football tracking data. Sample data from Metrica Sports is used to present three use-cases. How to be able to drag players on the football pitch. How to animate the tracking data. And how to use event and tracking data together to filter for interesting actions.
 categories: [friends of tracking data, FoTD, widgets, bqplot, qgrid, tracking data, metrica sports]
 title: An Interactive Visualisation of Football Tracking Data.
 image: images/fotd_widgets_thumbnail.png
