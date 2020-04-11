@@ -121,7 +121,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -162,13 +162,19 @@ window.onload = wrap_img;
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-<p>I agree one hundred percent that it was a really in-dept discussion of current issues. They also managed to get sample tracking data of two matches from <a href="https://github.com/metrica-sports/sample-data">Metrica Sports</a>. Given the quality of the talk they had, I thought I will have to up the ante on my side. I thought about what I would have been very happy to know a year ago and therefore I created a notebook where I use Jupyter widgets the create interactive components which you can use to investigate the Metrica Sports data. You can get all the code on Github, <a href="https://github.com/seidlr/fotd-interactive-football-pitch">https://github.com/seidlr/fotd-interactive-football-pitch</a>, and simply follow the installation instructions in the Readme.<br />
+<p>I agree one hundred percent that it was a really in-dept discussion of current issues. They also managed to get sample tracking data of two matches from <a href="https://github.com/metrica-sports/sample-data">Metrica Sports</a>. Given the quality of the talk they had, I thought I will have to up the ante on my side. I thought about what I would have been very happy to know a year ago and therefore I created a notebook where I use Jupyter widgets to create interactive components which you can use to investigate the Metrica Sports data. You can get all the code on Github, <a href="https://github.com/seidlr/fotd-interactive-football-pitch">https://github.com/seidlr/fotd-interactive-football-pitch</a>, and simply follow the installation instructions in the Readme.<br />
 Or, and this is what I really like about Jupyter widgets, you can just use Binder to test everything online without installation. <br />
 Just click on this image</p>
 <center>
 <a href="https://mybinder.org/v2/gh/seidlr/fotd-interactive-football-pitch/master?filepath=Interactive-Football-Pitch.ipynb" target="_blank"><img src="https://mybinder.org/badge_logo.svg" /></a>
 </center>
-<p>(and give Docker some time to build the image)</p>
+<p>and give Docker some time to build the image, and run all code of the repository online.<br />
+I decided to work on three small showcases such that you get an idea how you can use the tools.</p>
+<ol>
+  <li>Use-case 1: Moving Players on a Football Pitch</li>
+  <li>Use-case 2: Animate Tracking Data</li>
+  <li>Use-case 3: Replay Events with Tracking Data</li>
+</ol>
 
 <p>Here are some videos of the three use-cases I picked as showcases:</p>
 <h2 id="use-case-1-moving-players-on-a-football-pitch">Use-case 1: Moving Players on a Football Pitch</h2>
@@ -179,7 +185,7 @@ Just click on this image</p>
 </center>
 
 <h2 id="use-case-2-animate-tracking-data">Use-case 2: Animate Tracking Data</h2>
-<p>The cool thing is that you can build our widgets on top of this in a simple way. As example I’ve attached a <code class="highlighter-rouge">Play</code> and <code class="highlighter-rouge">slider</code> widget. Now you can easily replay the match using tracking data.</p>
+<p>The cool thing is that you can build other widgets on top of this in a simple way. As example, I’ve attached a <code class="highlighter-rouge">Play</code> and <code class="highlighter-rouge">Slider</code> widget. Now you can easily replay the match using tracking data.</p>
 
 <center>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/giqCwm85NzY" frameborder="0" allowfullscreen=""></iframe>
