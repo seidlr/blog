@@ -18,7 +18,7 @@ I thought it would be really cool to also be able to just run Spearman's Pitch C
 
    You can get the code on Github: [https://github.com/seidlr/LaurieOnTracking](https://github.com/seidlr/LaurieOnTracking)
 
-Just click on the `Open in Colab` batch next to Pitch Control and you are good to go. Then:
+Just click on the <img class="inline" src="https://colab.research.google.com/assets/colab-badge.svg"> badge next to Pitch Control and you are good to go. Then:
 - Run each cell in the notebook and ignore the warning about the unknown environment.
 - The data is downloaded directly from Metricas repository.  
 - Give it some time when it says "Reading team home" in a cell.  
