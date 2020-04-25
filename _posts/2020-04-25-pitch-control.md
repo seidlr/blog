@@ -34,7 +34,7 @@ If you are interested in the details what I needed to change to be able to run t
 ```
 pip install git+https://github.com/seidlr/LaurieOnTracking.git
 ```
-And you are directly able to use the implementation anywhere in your projects. I.e. you can read in the metrica data of sample match 2 in a dataframe with this code snippet.
+And you are able to use the implementation anywhere in your projects. I.e. you can read in the metrica data of sample match 2 in a dataframe with this code snippet.
 ```
 import friendsoftracking.metrica.IO as mio
 game_id = 2 # let's look at sample match 2
