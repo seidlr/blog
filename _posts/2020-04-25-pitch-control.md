@@ -21,7 +21,7 @@ I thought it would be really cool to also be able to just run Spearman's Pitch C
 Just click on the `Open in Colab` batch next to Pitch Control and you are good to go. Then:
 - Run each cell in the notebook and ignore the warning about the unknown environment.
 - The data is downloaded directly from Metricas repository.  
-- Give it some time when it says "Readining team home" in a cell.  
+- Give it some time when it says "Reading team home" in a cell.  
 
 ![Pitch Control in Google Colab](https://i.imgur.com/VwiiBtm.png)
 
