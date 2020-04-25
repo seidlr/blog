@@ -12,3 +12,5 @@ _notebooks/.ipynb_checkpoints
 .tweet-cache
 __pycache__
 _drafts
+
+.DS_Store

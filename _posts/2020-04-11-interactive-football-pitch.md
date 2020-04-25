@@ -6,7 +6,6 @@ categories: [friends of tracking data, FoTD, widgets, bqplot, qgrid, tracking da
 title: An Interactive Visualisation of Football Tracking Data
 image: images/fotd_widgets_thumbnail.png
 ---
-# An Interactive Visualisation of Football Tracking Data
 Unfortunately, I missed the last episode [How Tracking Data is Used in Football and What are the Future Challenges of Friends of Tracking Data](https://www.youtube.com/watch?v=kHTq9cwdkGA) hosted by David Sumptor ([@Soccermatics](https://twitter.com/Soccermatics)) with [@JaviOnData](https://twitter.com/JaviOnData), [@the_spearman](https://twitter.com/the_spearman), [Suds Gopaladesikan](https://www.linkedin.com/in/sudarshan-gopaladesikan-24321a29/) and [@EightyFivePoint](https://twitter.com/EightyFivePoint). It felt a bit like missing a great panel at a conference due to overlap in schedules. Luckily for me, and all others, everything is recorded on Youtube and available [here](https://www.youtube.com/watch?v=kHTq9cwdkGA). This is what David had to say about the episode.
 
 {% twitter https://twitter.com/Soccermatics/status/1248614585851998214?s=20 %}
