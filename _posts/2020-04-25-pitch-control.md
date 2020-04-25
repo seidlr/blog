@@ -11,13 +11,12 @@ I thought it would be really cool to also be able to just run Spearman's Pitch C
 
 | Notebook | Colab |
 | ------ | ------ |
-| [Basic Plotting of Event and Tracking Data](https://github.com/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson4.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson4.ipynb) |
-| [Advanced Plotting and Summary Statistics]((https://github.com/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson4.ipynb) ) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson5.ipynb)|
-| [Pitch Control](https://github.com/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson6.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson6.ipynb) |
+| [Basic Plotting of Event and Tracking Data](https://github.com/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson4.ipynb) | <a href="https://colab.research.google.com/github/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson4.ipynb" target="_blank" ><img src="https://colab.research.google.com/assets/colab-badge.svg></a> |
+| [Advanced Plotting and Summary Statistics]((https://github.com/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson4.ipynb) ) | <a href="https://colab.research.google.com/github/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson5.ipynb" target="_blank" ><img src="https://colab.research.google.com/assets/colab-badge.svg></a>|
+| [Pitch Control](https://github.com/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson6.ipynb) | <a href="https://colab.research.google.com/github/seidlr/LaurieOnTracking/blob/master/notebooks/Lesson6.ipynb" target="_blank" ><img src="https://colab.research.google.com/assets/colab-badge.svg></a>|
 {: #colab}  
 
    You can get the code on Github: [https://github.com/seidlr/LaurieOnTracking](https://github.com/seidlr/LaurieOnTracking)
-
 
 Just click on the `Open in Colab` batch next to Pitch Control and you are good to go. Then:
 - Run each cell in the notebook and ignore the warning about the unknown environment.
