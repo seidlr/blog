@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>A data-driven analysis of ATP Tour Final in Cincinatti in 1990 - Brad Gilbert vs. Stefan Edberg | talksportsdata</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="A data-driven analysis of ATP Tour Final in Cincinatti in 1990 - Brad Gilbert vs. Stefan Edberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="With tennis tournaments being suspended, I spend some time to create event data for a historical match - the ATP final in Cincinatti where Brad Gilbert faced Stefan Edberg. Here are some stats about the match you may have not seen before." />
+<meta property="og:description" content="With tennis tournaments being suspended, I spend some time to create event data for a historical match - the ATP final in Cincinatti where Brad Gilbert faced Stefan Edberg. Here are some stats about the match you may have not seen before." />
+<link rel="canonical" href="https://seidlr.github.io/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html" />
+<meta property="og:url" content="https://seidlr.github.io/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html" />
+<meta property="og:site_name" content="talksportsdata" />
+<meta property="og:image" content="https://seidlr.github.io/blog/images/cincinatti1990/Movement_EdbergServe.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-10T00:00:00-05:00" />
+<script type="application/ld+json">
+{"image":"https://seidlr.github.io/blog/images/cincinatti1990/Movement_EdbergServe.png","description":"With tennis tournaments being suspended, I spend some time to create event data for a historical match - the ATP final in Cincinatti where Brad Gilbert faced Stefan Edberg. Here are some stats about the match you may have not seen before.","mainEntityOfPage":{"@type":"WebPage","@id":"https://seidlr.github.io/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html"},"@type":"BlogPosting","url":"https://seidlr.github.io/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html","headline":"A data-driven analysis of ATP Tour Final in Cincinatti in 1990 - Brad Gilbert vs. Stefan Edberg","dateModified":"2020-06-10T00:00:00-05:00","datePublished":"2020-06-10T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://seidlr.github.io/blog/feed.xml" title="talksportsdata" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-162157046-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>A data-driven analysis of ATP Tour Final in Cincinatti in 1990 - Brad Gilbert vs. Stefan Edberg | talksportsdata</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="A data-driven analysis of ATP Tour Final in Cincinatti in 1990 - Brad Gilbert vs. Stefan Edberg" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="With tennis tournaments being suspended, I spend some time to create event data for a historical match - the ATP final in Cincinatti where Brad Gilbert faced Stefan Edberg. Here are some stats about the match you may have not seen before." />
+<meta property="og:description" content="With tennis tournaments being suspended, I spend some time to create event data for a historical match - the ATP final in Cincinatti where Brad Gilbert faced Stefan Edberg. Here are some stats about the match you may have not seen before." />
+<link rel="canonical" href="https://seidlr.github.io/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html" />
+<meta property="og:url" content="https://seidlr.github.io/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html" />
+<meta property="og:site_name" content="talksportsdata" />
+<meta property="og:image" content="https://seidlr.github.io/blog/images/cincinatti1990/Movement_EdbergServe.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-10T00:00:00-05:00" />
+<script type="application/ld+json">
+{"image":"https://seidlr.github.io/blog/images/cincinatti1990/Movement_EdbergServe.png","description":"With tennis tournaments being suspended, I spend some time to create event data for a historical match - the ATP final in Cincinatti where Brad Gilbert faced Stefan Edberg. Here are some stats about the match you may have not seen before.","mainEntityOfPage":{"@type":"WebPage","@id":"https://seidlr.github.io/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html"},"@type":"BlogPosting","url":"https://seidlr.github.io/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html","headline":"A data-driven analysis of ATP Tour Final in Cincinatti in 1990 - Brad Gilbert vs. Stefan Edberg","dateModified":"2020-06-10T00:00:00-05:00","datePublished":"2020-06-10T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://seidlr.github.io/blog/feed.xml" title="talksportsdata" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-162157046-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">talksportsdata</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">A data-driven analysis of ATP Tour Final in Cincinatti in 1990 - Brad Gilbert vs. Stefan Edberg</h1><p class="page-description">With tennis tournaments being suspended, I spend some time to create event data for a historical match - the ATP final in Cincinatti where Brad Gilbert faced Stefan Edberg. Here are some stats about the match you may have not seen before.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-06-10T00:00:00-05:00" itemprop="datePublished">
+        Jun 10, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#tennis analytics">tennis analytics</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#atp tour">atp tour</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#event data">event data</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#Cincinatti">Cincinatti</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#Brad Gilbert">Brad Gilbert</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#Stefan Edberg">Stefan Edberg</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="introduction">Introduction</h2>
+<p>Recently my brother finally read Brad Gilbert’s <a href="https://www.amazon.com/Winning-Ugly-Mental-Warfare-Tennis-Lessons/dp/067188400X/">Winning Ugly (1993)</a>. I tried to convince him for quite some time that he should read it but he ignored my advice for a long time. He proposed that I should create some event data for one of Brad Gilbert’s matches. With all tennis tournaments being suspended at the time I thought that this might be fun. So, I went to TennisTV and typed “Brad Gilbert” into the search box and got exactly one result: The <a href="https://en.wikipedia.org/wiki/1990_Thriftway_ATP_Championships_%E2%80%93_Singles">ATP Final in Cincinatti</a> where Brad Gilbert faced Stefan Edberg. As creating event data basically means to note the location of each bounce and hit on the court, I was quite pleased that the match was a fast 6:1 6:1 victory of Stefan Edberg, even though Brad Gilbert won’t agree with me on this. :) 
+The biggest challenge for the data collection was that I had to write a tool that allows me to collect the hit and bounce information independent of the camera image because a significant part of the match was not shown in this nice static topview that is used today. I spare you with the details of the collection, and let’s focus on why it is pretty cool to have event data for this match.</p>
+
+<h2 id="event-data">Event Data</h2>
+<p>To start with, here is a simple visualization what event data is. We record different events in the match and for each we note the position of the event and the position of each player at the time of the event. 
+<img src="/blog/images/cincinatti1990/TennisEventData.png" alt="Tennis Event Data" title="An example of a rally captured with event data." />
+In the example, Edberg is serving from the right, we record the positions of Gilbert, Edberg and the ball at the time of the serve (S), each time the ball bounces (B) or a player hits (H) the ball and when the rally is finished (P). This allows us to investigate a match on a rally or even single-event level that is clearly way out of scope for common box statistics.</p>
+
+<h2 id="stats">Stats</h2>
+<p>As this match happened 30 years ago we only have box score statistics of it. If you are interested, <a href="https://tt.tennis-warehouse.com/index.php?threads/match-stats-report-edberg-vs-gilbert-cincinnati-final-1990.646293/">here</a> is a more in-depth discussion of the match.
+But, box scores do not tell the whole story of a match and I believe that you can get so much more insights based on player and ball movement compared to these simple summary statistics. Therefore, I wanted to provide at least some insights based on statistics that are not available with simple box scores.</p>
+
+<h3 id="rally-breakdown">Rally breakdown</h3>
+<p>Let’s start with something simple that should be part of every analysis. A breakdown of all winners and errors over the rally length.
+<a href="https://www.braingametennis.com/">Craig O’Shannessy</a> is a big advocate for this kind of analysis, and I agree that this makes total sense. You need to put statistics into context and a breakdown by rally length let you easily spot where you lost or won the points.
+Therefore, lets look at the winners and errors of Edberg and Gilbert and split them into rallies of lengths 0-4, 5-8 and 9+.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Type</th>
+      <th>0-4</th>
+      <th>5-8</th>
+      <th>9+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B.Gilbert</td>
+      <td>Winner</td>
+      <td>6</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B.Gilbert</td>
+      <td>Error</td>
+      <td>28</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>S.Edberg</td>
+      <td>Winner</td>
+      <td>15</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>S.Edberg</td>
+      <td>Error</td>
+      <td>16</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>What we can see is that Edberg managed to keep the rallies short, especially through his serve&amp;volley game. He hit a lot winners with his first strokes and also forced Brad Gilbert to play tough shots which resulted in a lot of errors early in the rallies.
+Nowadays, <a href="https://www.braingametennis.com/">Craig O’Shannessy</a> is advocating that players should come to the net more often and that one should focus more on playing the points in 0-4 smart. Therefore, Edbergs game plan in this final might be a blueprint of what O’Shanessy wants the game to look like. Lets look at the stroke distribution of both players.</p>
+
+<h3 id="stroke-breakdowm">Stroke Breakdowm</h3>
+<p>The distribution of strokes for both players is a statistic that is also available with box scores. It clearly shows that Edberg varied his strokes more than Gilbert and managed to play lots of volleys.
+<img src="/blog/images/cincinatti1990/StrokeDistribution_wide.png" alt="" title="Stroke distribution: Edbergs varies his strokes a lot." />
+Building on this we can look at the first stat that is not available without event data. The <strong>covered distances</strong> of both players.</p>
+
+<h3 id="covered-distances">Covered distances</h3>
+<p>When you have the hit locations of all strokes of a player and the player positions, it is simple to calculate the distance he covered during a rally and the match. Here are the results for the match. You might have guessed that Gilbert runs more than Edberg, but actually Edberg managed to not let Gilbert run and actually covered more distance through moving to the net than Gilbert running all over the court chasing Edbergs volleys.</p>
+
+<p><img src="/blog/images/cincinatti1990/DistanceCovered.png" alt="Covered Distances" title="Distance covered: Edberg managed to not let Gilbert move a lot." /></p>
+
+<h3 id="serve-locations-and-next-stroke">Serve locations and next stroke</h3>
+<p>We have seen that Edberg played a lot of serve&amp;volley, thus it is interesting to look into his serve locations and follow up strokes.
+Here is a breakdown of all serve locations and positions of Edbergs next stroke. (Only including points where Edberg actually had to hit the second ball.) Ball bounces are colored yellow and the hit positions of Edbergs first stroke after the serve are colored red and green indicates if Edberg won this point or not. The hit positions show that Edberg played serve and volley almost every time and did this very successfully.</p>
+
+<p><img src="/blog/images/cincinatti1990/Edberg_ServeAndVolley.png" alt="" title="Serve and volley locations on S.Edberg's serve" /></p>
+
+<h3 id="movement-radars">Movement Radars</h3>
+<p>When you have the positions of each player at each bounce and hit event, it feels quite natural to ask if one could use this information to get more insight into the actual movement of the players. Labeling each event in the match I recognized that S. Edberg was moving a lot forward to the net, especially given his exclusive serve&amp;volley strategy. On the other hand, B. Gilbert was not moving a lot, as shown before, and his movement was more left and right around the baseline, especially when S. Edberg was serving.
+Let’s investigate the movement of both players for B. Gilberts service games.<br />
+Instead of showing a heatmap I want to try something else and create <strong>movement radars</strong> to quantify the movement directions for each player. The intuition is that we should be able to see if someone was coming to the net often or just running left to right. If someone was forced to only play backhands this should also be visible. For each hit event I note down the covered distance and the relative angle between the current and the last position of the player. Then I split the movements into eight equidistant intervals create a simple histogram.<br />
+Sounds complicated? Lets look at the results.</p>
+
+<p><img src="/blog/images/cincinatti1990/Movement_GilbertServe.png" alt="" title="Movement radars when B.Gilbert served" />
+Here are the movements of Gilbert and Edberg in Gilberts serve. We can see that Gilbert was moving forward and comming to the net often and that Edberg forced him to play backhand ground strokes and volleys. Edberg, on the other hand, was moving left and right and hitting forhand and backhands but also moved forward to the net when he had a change to do so. I think that this “simple” chart can tell you a good story about the match. Lets look at the movements when Edberg was serving.</p>
+
+<p><img src="/blog/images/cincinatti1990/Movement_EdbergServe.png" alt="" title="Movement radars when S.Edberg served" />
+We can clearly see that Edberg was moving forward and playing serve&amp;volley a lot. Furthermore, he played mostly backhand volleys and acted cross-court. Also, Edberg played to Gilberts backhand a lot and made him move to ad-court and sometimes even backwards.<br />
+Additionally, lets focus on the annotations in each part of the pie. These are distances covered for each of the eight angles. You can clearly see how Edberg covered a lot more distance coming to the net than Gilbert running right to left on the baseline.</p>
+
+<h2 id="summary">Summary</h2>
+<p>Overall I hope that I could show the value of event data in tennis and there is so much more you can do with this kind of data. I think you can nicely see how Edberg, on top of his game in 1990, forced Gilbert to play where he was incredibly good at - focusing on short rallies and finishing at the net. In the final 1990 Edberg was playing his strengths to his opponents weaknesses, in principal following the future advice in <a href="https://www.amazon.com/Winning-Ugly-Mental-Warfare-Tennis-Lessons/dp/067188400X/">Winning Ugly</a> (released in 1993) to the point.</p>
+
+
+  </div><a class="u-url" href="/blog/tennis%20analytics/atp%20tour/event%20data/cincinatti/brad%20gilbert/stefan%20edberg/2020/06/10/atp-cincinatti-1990-gilbert-edberg.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>sports analytics blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/seidlr" title="seidlr"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/robert-seidl" title="robert-seidl"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#linkedin"></use></svg></a></li><li><a rel="me" href="https://twitter.com/rob_seidl" title="rob_seidl"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
