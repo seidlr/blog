@@ -41,14 +41,14 @@ The distribution of strokes for both players is a statistic that is also availab
 Building on this we can look at the first stat that is not available without event data. The **covered distances** of both players.
 
 ### Covered distances
-When you have the hit locations of all strokes of a player and the player positions, it is simple to calculate the distance he covered during a rally and the match. Here are the results for the match. You might have guessed that Gilbert runs more than Edberg, but actually Edberg managed to not let Gilbert run and actually covered more distance through moving to the net than Gilbert running all over the court chasing Edbergs volleys.
+When you have the hit locations of all strokes of a player and the player positions, it is simple to calculate the distance he covered during a rally and the match. Here are the results for the match. You might have guessed that Gilbert runs more than Edberg, but actually Edberg managed to not let Gilbert run and covered more distance through moving to the net than Gilbert running all over the court chasing Edbergs volleys.
 
 ![Covered Distances]({{ site.baseurl }}/images/cincinatti1990/DistanceCovered.png "Distance covered: Edberg managed to not let Gilbert move a lot.")
 
 
 ### Serve locations and next stroke
 We have seen that Edberg played a lot of serve&volley, thus it is interesting to look into his serve locations and follow up strokes.
-Here is a breakdown of all serve locations and positions of Edbergs next stroke. (Only including points where Edberg actually had to hit the second ball.) Ball bounces are colored yellow and the hit positions of Edbergs first stroke after the serve are colored red and green indicates if Edberg won this point or not. The hit positions show that Edberg played serve and volley almost every time and did this very successfully.
+Here is a breakdown of all serve locations and positions of Edbergs next stroke. (Only including points where Edberg actually had to hit the second ball.) Ball bounces are colored yellow and the hit positions of Edbergs first stroke after the serve are colored red and green indicating if Edberg won this point or not. The hit positions show that Edberg played serve and volley almost every time and did this very successfully.
 
 ![]({{ site.baseurl }}/images/cincinatti1990/Edberg_ServeAndVolley.png "Serve and volley locations on S.Edberg's serve")
 
@@ -56,11 +56,11 @@ Here is a breakdown of all serve locations and positions of Edbergs next stroke.
 ### Movement Radars
 When you have the positions of each player at each bounce and hit event, it feels quite natural to ask if one could use this information to get more insight into the actual movement of the players. Labeling each event in the match I recognized that S. Edberg was moving a lot forward to the net, especially given his exclusive serve&volley strategy. On the other hand, B. Gilbert was not moving a lot, as shown before, and his movement was more left and right around the baseline, especially when S. Edberg was serving.
 Let's investigate the movement of both players for B. Gilberts service games.  
-Instead of showing a heatmap I want to try something else and create **movement radars** to quantify the movement directions for each player. The intuition is that we should be able to see if someone was coming to the net often or just running left to right. If someone was forced to only play backhands this should also be visible. For each hit event I note down the covered distance and the relative angle between the current and the last position of the player. Then I split the movements into eight equidistant intervals create a simple histogram.  
+Instead of showing a heatmap I want to try something else and create **movement radars** to quantify the movement directions for each player. The intuition is that we should be able to see if someone was coming to the net often or just running left to right. If someone was forced to only play backhands this should also be visible. For each hit event I note down the covered distance and the relative angle between the current and the last position of the player. Then I split the movements into eight equidistant intervals and create a simple histogram of the angles.  
 Sounds complicated? Lets look at the results.
 
 ![]({{ site.baseurl }}/images/cincinatti1990/Movement_GilbertServe.png "Movement radars when B.Gilbert served")
-Here are the movements of Gilbert and Edberg in Gilberts serve. We can see that Gilbert was moving forward and comming to the net often and that Edberg forced him to play backhand ground strokes and volleys. Edberg, on the other hand, was moving left and right and hitting forhand and backhands but also moved forward to the net when he had a change to do so. I think that this "simple" chart can tell you a good story about the match. Lets look at the movements when Edberg was serving.
+Here are the movements of Gilbert and Edberg when Gilbert was serving. We can see that Gilbert was moving forward and coming to the net often and that Edberg forced him to play backhand ground strokes and volleys. Edberg, on the other hand, was moving left and right and hitting forhand and backhands but also moved forward to the net when he had a change to do so. I think that this "simple" chart can tell you a good story about the match. Lets look at the movements when Edberg was serving.
 
 
 ![]({{ site.baseurl }}/images/cincinatti1990/Movement_EdbergServe.png "Movement radars when S.Edberg served")
